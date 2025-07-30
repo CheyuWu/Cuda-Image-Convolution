@@ -1,1 +1,1 @@
-# Histogram-Equalization
+# Cuda-Image-Convolution
