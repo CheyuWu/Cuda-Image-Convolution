@@ -1,4 +1,4 @@
-# Cuda-Image-Convolution# CUDA Image Convolution
+# CUDA Image Convolution
 
 This project demonstrates CUDA-based convolution filters (Sobel, Gaussian, etc.) implemented both with custom CUDA kernels and NVIDIA NPP (Performance Primitives).
 
