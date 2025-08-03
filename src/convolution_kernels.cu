@@ -63,8 +63,9 @@ void apply_custom_convolution(const cv::Mat &input, cv::Mat &output, const std::
     else if (filter_type == "gaussian")
     {
         float gaussian[9] = {1, 2, 1, 2, 4, 2, 1, 2, 1};
-        for (int i = 0; i < 9; ++i)
+        for (int i = 0; i < 9; ++i){
             h_kernel[i] = gaussian[i] / 16.0f;
+        }
     }
     else if (filter_type == "sharpen")
     {
