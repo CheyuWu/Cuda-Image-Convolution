@@ -22,3 +22,7 @@ make
   $ sudo apt install libopencv-dev
   ```
 - CUDA Toolkit (with NPP)
+
+
+## Introdution in Youtube
+- [CUDA Image Convolution Tutorial](https://www.youtube.com/watch?v=wOX2mD822d8&ab_channel=CheyuWu)
