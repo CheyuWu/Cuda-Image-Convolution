@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "convolution_kernels.cuh"
+#include "convolution_kernels.hpp"
 #include "npp_convolution_wrapper.hpp"
 #include "image_utils.hpp"
 

@@ -41,18 +41,11 @@ void apply_npp_convolution(const cv::Mat &input, cv::Mat &output, const std::str
 
     if (filter_type == "sobel")
     {
-        status = nppiFilterSobelHorizBorder_8u_C1R(
-            pSrc, srcStep, oSrcSize, oSrcOffset,
-            pDst, dstStep, oSizeROI,
-            NPP_BORDER_REPLICATE);
+        status = nppiFilterSobelHoriz_8u_C1R(pSrc, srcStep, pDst, dstStep, oSizeROI);
     }
     else if (filter_type == "gaussian")
     {
-        status = nppiFilterGaussBorder_8u_C1R(
-            pSrc, srcStep, oSrcSize, oSrcOffset,
-            pDst, dstStep, oSizeROI,
-            NPP_MASK_SIZE_3_X_3,
-            NPP_BORDER_REPLICATE);
+        status = nppiFilterGauss_8u_C1R(pSrc, srcStep, pDst, dstStep, oSizeROI, NPP_MASK_SIZE_3_X_3);
     }
     else
     {
